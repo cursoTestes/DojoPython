@@ -5,7 +5,7 @@ class TestCaixa(unittest.TestCase):
     def teste_sacar10(self):
         esperado = {'10':1,'20':0,'50':0, '100':0}
         resultado = sacar(10)
-        self.assertEqual(resultado, esperado)
+        self.assertEqual(resultado, 1)
 
     def teste_sacar20(self):
         esperado = {'10':0,'20':1,'50':0, '100':0}
@@ -15,7 +15,7 @@ class TestCaixa(unittest.TestCase):
     def teste_sacar30(self):
         esperado = {'10':1,'20':1,'50':0, '100':0}
         resultado = sacar(30)
-        self.assertEqual(resultado, esperado)
+        self.assertEqual(25, esperado)
 
     def teste_sacar40(self):
         esperado = {'10':0,'20':2,'50':0, '100':0}
